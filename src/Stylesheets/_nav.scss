@@ -1,0 +1,19 @@
+.nav-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    box-shadow: 0px 3px 10px black;
+    nav{
+        width:60%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height:10vh;
+        .nav-links{
+            font-size:1.3rem;
+            text-decoration: none;
+            color:black;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.project-link{
+    text-decoration: none;
+    color:black;
+}
+.projects-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width:75%;
+    margin:50px auto;
+    border:solid red 5px;
+}
+
+.project-container{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border:solid black 5px;
+    width:600px;
+    margin:25px;
+    .project{
+        width:350px;
+    }
+}
