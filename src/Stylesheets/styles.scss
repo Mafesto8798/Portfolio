@@ -1,7 +1,10 @@
 @import './nav';
+@import './home';
 @import './projects.scss';
 
 body{
     margin:0;
+    background:#333;
+    color:white;
     font-family: 'Lato', sans-serif;
 }

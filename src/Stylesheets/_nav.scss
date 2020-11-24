@@ -2,8 +2,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background: orange;
-    box-shadow: 0px 3px 10px black;
+    background: #0099CC;
+    box-shadow: 0px 6px 20px black;
     nav{
         width:60%;
         display:flex;
@@ -14,6 +14,14 @@
             font-size:1.3rem;
             text-decoration: none;
             color:black;
+            &:hover{
+                animation: navlinks 0.2s ease-in-out forwards;
+            }
         }
+    }
+}
+@keyframes navlinks{
+    100%{
+        color:white;
     }
 }

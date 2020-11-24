@@ -9,17 +9,35 @@
     flex-direction:column;
     width:75%;
     margin:50px auto;
-    border:solid red 5px;
+    opacity:0;
+    animation: projects 0.5s ease-in forwards;
+}
+@keyframes projects{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .project-container{
     display:flex;
     justify-content: start;
     align-items: center;
-    border:solid black 5px;
+    box-shadow: -3px 10px 20px black;
+    background:white;
     width:600px;
     margin:25px;
     .project{
         width:350px;
+    }
+}
+@media (max-width:800px){
+    .project-container{
+        flex-direction:column;
+        justify-content: center;
+        width:300px;
     }
 }

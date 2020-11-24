@@ -4,9 +4,9 @@ import {v4 as uuidv4} from 'uuid'
 
 const projects = [
     {id:uuidv4(),image:"Leaf.png",link:"https://login-acnh.herokuapp.com/",title:"Villager Search",
-        desc:"Animal Crossing inspired, villager encyclopedia"},
+        desc:"Animal Crossing "},
     {id:uuidv4(),image:"Notes.png",link:"https://google.com",title:"Notes App",
-        desc:"Take notes, delete notes"}
+        desc:"Simple notes app "}
 ]
 
 export default function Projects() {
