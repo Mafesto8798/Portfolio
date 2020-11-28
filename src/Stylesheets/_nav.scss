@@ -1,4 +1,8 @@
 .nav-container{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -24,4 +28,35 @@
     100%{
         color:white;
     }
+}
+@media (max-width:1200px){
+    .nav-container{
+        min-height:12vh;
+        box-shadow:none;
+        justify-content: space-around;
+        nav{    
+        width:70%;
+            .nav-links{
+                font-size:1.5rem;
+                &:hover{
+                    animation: navlinks 0.1s;
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px){
+        .nav-container{
+            min-height:12vh;
+            justify-content: space-around;
+            nav{    
+            width:80%;
+                .nav-links{
+                    font-size:0.8rem;
+                    &:hover{
+                        animation: navlinks 0.1s;
+                    }
+                }
+            }
+        }
 }
