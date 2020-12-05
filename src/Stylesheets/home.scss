@@ -48,10 +48,9 @@
             }
         }
         .languages{
-            flex-direction: column;
+            flex-direction: row;
             .language-icon{
-                margin:5px;
-                height:150px;
+                height:170px;
                 &:hover{
                     animation: grow 0.1s ease-in-out;
                 }
@@ -65,15 +64,15 @@
         margin: 40% auto;
         .profile-container{
             font-size:0.45rem;
-            margin:50px;
+            margin:5px;
             h1{
                 white-space: nowrap;
             }
         }
         .languages{
+            margin-top:-50px;
             flex-direction: column;
             .language-icon{
-                margin:2vh;
                 height:100px;
                 &:hover{
                     animation: grow 0.1s ease-in-out;
