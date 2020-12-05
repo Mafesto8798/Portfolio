@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className="homepage">
             <div className="profile-container">
-                <h1>Kenny Chavarriaga - Front end Developer</h1>
+                <h1>Kenny Chavarriaga - Web Developer</h1>
             </div>
             <section className="bio">
                 <div className="languages">
