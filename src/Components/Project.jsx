@@ -5,7 +5,7 @@ export default function Project({project}) {
 
 
     return (
-        <Link className="project-link"to={{pathname:project.link}} target="blank">
+        <Link className="project-link" to={{pathname:project.link}} target="blank">
         <div className="project-container">
             <div>
                 <h1>{project.title}</h1>

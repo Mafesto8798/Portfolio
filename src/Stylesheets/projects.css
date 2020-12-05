@@ -59,8 +59,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -72,7 +73,7 @@
 }
 
 .project-container .project-img {
-  width: 270px;
+  height: 200px;
 }
 
 @media (max-width: 1200px) {

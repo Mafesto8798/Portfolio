@@ -18,7 +18,7 @@
 }
 
 .nav-container nav {
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +39,29 @@
 .nav-container nav .nav-links:hover {
   -webkit-animation: navlinks 0.2s ease-in-out forwards;
           animation: navlinks 0.2s ease-in-out forwards;
+}
+
+.nav-container .github {
+  height: 70px;
+}
+
+.nav-container .github:hover {
+  -webkit-animation: git 0.2s ease-in forwards;
+          animation: git 0.2s ease-in forwards;
+}
+
+@-webkit-keyframes git {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes git {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 @-webkit-keyframes navlinks {

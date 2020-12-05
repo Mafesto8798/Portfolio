@@ -9,7 +9,7 @@
     background: #0099CC;
     box-shadow: 0px 6px 20px black;
     nav{
-        width:60%;
+        width:50%;
         display:flex;
         justify-content: space-around;
         align-items: center;
@@ -23,7 +23,21 @@
             }
         }
     }
+    .github{
+        height:70px;
+        &:hover{
+            animation: git 0.2s ease-in forwards;
+        }
+
+        @keyframes git{
+            100%{
+                transform: scale(1.2);
+            }
+        }
+    }
 }
+
+
 @keyframes navlinks{
     100%{
         color:white;
