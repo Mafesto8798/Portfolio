@@ -73,7 +73,7 @@
 }
 
 .project-container .project-img {
-  height: 200px;
+  width: 300px;
 }
 
 @media (max-width: 1200px) {

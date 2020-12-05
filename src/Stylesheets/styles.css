@@ -112,6 +112,9 @@
     -webkit-animation: navlinks 0.1s;
             animation: navlinks 0.1s;
   }
+  .nav-container .github {
+    height: 40px;
+  }
 }
 
 body {
