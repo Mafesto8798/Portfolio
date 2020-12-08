@@ -26,9 +26,6 @@
         align-items: center;
     .language-icon{
         height:200px;
-            &:hover{
-                 animation: grow 0.15s ease-in-out forwards;
-        }
     }
 }
 }
@@ -39,21 +36,21 @@
 }
 @media (max-width:1200px){
     .homepage{
-        margin: 30% auto;
+        margin: 25% auto;
         .profile-container{
-            font-size:1.1rem;
             margin:50px;
+            p{
+                font-size:1.5rem;
+            }
             h1{
+                font-size:2rem;
                 white-space: nowrap;
             }
         }
         .languages{
             flex-direction: row;
             .language-icon{
-                height:170px;
-                &:hover{
-                    animation: grow 0.1s ease-in-out;
-                }
+                height:100px;
             }
         }
     }
@@ -63,20 +60,19 @@
     .homepage{
         margin: 40% auto;
         .profile-container{
-            font-size:0.45rem;
             margin:5px;
+            p{
+                font-size:0.8rem;
+            }
             h1{
+                font-size:1rem;
                 white-space: nowrap;
             }
         }
         .languages{
-            margin-top:-50px;
-            flex-direction: column;
+            flex-direction:row;
             .language-icon{
-                height:100px;
-                &:hover{
-                    animation: grow 0.1s ease-in-out;
-                }
+                height:70px;
             }
         }
     }
