@@ -4,9 +4,10 @@ export default function Home() {
     return (
         <div className="homepage">
             <div className="profile-container">
-                <h1>Kenny Chavarriaga - Front End Developer</h1>
-                <p>Being a software developer has been my interest in career since grade school, now it's' a part of my everyday life. I learn new things constantly,
-                    and developed a passion for solving problems in the world of software. I am looking to pursue my dream and to bring my skills to the test, so that I can put 100% of my focus and passion into the work I do.  </p>
+                <h2>Kenny Chavarriaga - Front End Developer</h2>
+                <p>I am a self-taught developer from Rhode Island. I love creating new user interfaces and see how far I can stretch my skills in the unlimited world of coding. My other passions
+                    include playing bass, sculpting, and cooking.
+                </p>
             </div>
             <section className="bio">
                 <div className="languages">
