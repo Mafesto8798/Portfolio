@@ -1,7 +1,6 @@
 import React from 'react'
 import {v4 as uuidv4} from "uuid";
 import Project from './Project'
-import {Link} from 'react-router-dom'
 const projects = [
     {id:uuidv4(),image:"Logo.png",link:"https://login-acnh.herokuapp.com/",title:"Villager Search",
         desc:"Login or create an account and search for Animal Crossing villagers as well as get to know them.",
