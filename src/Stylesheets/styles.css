@@ -1,48 +1,22 @@
 .nav-container {
-  position: fixed;
-  z-index: 1;
   top: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: #0099CC;
-  -webkit-box-shadow: 0px 6px 20px black;
-          box-shadow: 0px 6px 20px black;
-}
-
-.nav-container nav {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 10vh;
-}
-
-.nav-container nav .nav-links {
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: black;
-}
-
-.nav-container nav .nav-links:hover {
-  -webkit-animation: navlinks 0.2s ease-in-out forwards;
-          animation: navlinks 0.2s ease-in-out forwards;
+  -webkit-box-shadow: 0px 6px 15px black;
+          box-shadow: 0px 6px 15px black;
 }
 
 .nav-container .github {
-  height: 70px;
+  margin: 10px;
+  height: 50px;
 }
 
 .nav-container .github:hover {
@@ -52,75 +26,80 @@
 
 @-webkit-keyframes git {
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @keyframes git {
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-@-webkit-keyframes navlinks {
-  100% {
-    color: white;
-  }
-}
-
-@keyframes navlinks {
-  100% {
-    color: white;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @media (max-width: 1200px) {
   .nav-container {
-    min-height: 12vh;
     -webkit-box-shadow: none;
             box-shadow: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .nav-container nav {
-    width: 70%;
-  }
-  .nav-container nav .nav-links {
-    font-size: 1.5rem;
-  }
-  .nav-container nav .nav-links:hover {
-    -webkit-animation: navlinks 0.1s;
-            animation: navlinks 0.1s;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 600px) {
   .nav-container {
-    min-height: 12vh;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .nav-container nav {
-    width: 80%;
-  }
-  .nav-container nav .nav-links {
-    font-size: 0.8rem;
-  }
-  .nav-container nav .nav-links:hover {
-    -webkit-animation: navlinks 0.1s;
-            animation: navlinks 0.1s;
   }
   .nav-container .github {
     height: 40px;
   }
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1a1a1a;
+}
+
+footer .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contact-container a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+footer .contact-container a:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
-  background: #333;
+  background: #222;
   color: white;
-  font-family: 'Lato', sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

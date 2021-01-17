@@ -1,56 +1,52 @@
 .homepage{
-    width:75%;
-    margin:15% auto;
-    opacity: 0;
-    animation: homepage 0.5s ease-in forwards;
-    .profile-container{
-    font-size:2.5rem;
-    margin:100px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    }
-}
-@keyframes homepage{
-    100%{
-        opacity: 1;
-    }
+    height:60vh;
+        .woods-img{
+            opacity: 0.4;
+            width:100%;
+            height:700px;
+            z-index:-1;
+            object-fit: cover;
+            position:absolute;
+        }
+        .profile-container{
+        font-family: 'Quicksand', sans-serif;
+        width:50%;
+        font-size:2.2rem;
+        margin: auto;
+        padding:70px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        }
 }
 .bio{
     margin:auto;
-    width:80%;
     .languages{
         display:flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     .language-icon{
-        height:200px;
+        height:100px;
     }
 }
-}
-@keyframes grow {
-    100%{
-        transform: scale(1.3);
-    }
 }
 @media (max-width:1200px){
     .homepage{
-        margin: 25% auto;
         .profile-container{
-            margin:50px;
+            width:80%;
+            h2{
+                font-size:2.5rem;
+            }
             p{
                 font-size:1.5rem;
             }
-            h1{
-                font-size:2rem;
-                white-space: nowrap;
-            }
         }
-        .languages{
-            flex-direction: row;
-            .language-icon{
-                height:100px;
+        .bio{
+            .languages{
+                .language-icon{
+                    height:75px;
+                }
             }
         }
     }
@@ -58,21 +54,38 @@
 
 @media (max-width:600px){
     .homepage{
-        margin: 40% auto;
+        margin: auto;
         .profile-container{
-            margin:5px;
+            width:60%;
             p{
-                font-size:0.8rem;
+                font-size:1rem;
             }
-            h1{
+            h2{
                 font-size:1rem;
                 white-space: nowrap;
             }
         }
+        .bio{
+            margin:30px;
         .languages{
-            flex-direction:row;
             .language-icon{
-                height:70px;
+                height:50px;
+            }
+        }
+    }
+    }
+}
+
+@media (max-width:400px){
+    .homepage{
+
+        .profile-container{
+            width:50%;
+            p{
+                font-size:0.8rem;
+            }
+            h2{
+                font-size:0.8rem;
             }
         }
     }
