@@ -20,6 +20,23 @@
         flex-direction: column;
         }
 }
+.contact-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background:#0099CC;
+    h2{
+        font-family: 'Quicksand', sans-serif;
+    }
+    a{
+        font-family: 'Quicksand', sans-serif;
+        margin:20px;
+        color:white;
+        text-decoration: none;
+        font-size:1.5rem;
+    }
+}
 .bio{
     margin:auto;
     .languages{
@@ -33,6 +50,14 @@
 }
 @media (max-width:1200px){
     .homepage{
+        .contact-container{
+            h2{
+                font-size:1.2rem;
+            }
+            a{
+                font-size:1.2rem;
+            }
+        }
         .profile-container{
             width:80%;
             h2{
@@ -55,6 +80,14 @@
 @media (max-width:600px){
     .homepage{
         margin: auto;
+        .contact-container{
+            h2{
+                font-size:0.9rem;
+            }
+            a{
+                font-size:0.9rem;
+            }
+        }
         .profile-container{
             width:60%;
             p{

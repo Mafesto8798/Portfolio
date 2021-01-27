@@ -70,9 +70,9 @@ export default function Home() {
             </div>
             <footer>
                 <div className="contact-container">
-                <h2>Contact me!</h2>
+                <h2>Contact Me!</h2>
                 <a href="mailto:kenny.chavarriaga@gmail.com" subject="Portfolio" target="blank" > Kenny.chavarriaga@gmail.com</a>
-                <h3> (401) 369-2607</h3>
+                <a href="tel:401-369-2607"> (401) 369-2607</a>
                 </div>
             </footer>
         </div>
