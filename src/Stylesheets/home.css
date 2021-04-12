@@ -46,7 +46,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #0099CC;
+  background: #007aa3;
+  height: 20vh;
 }
 
 .contact-container h2 {
@@ -105,6 +106,9 @@
 @media (max-width: 600px) {
   .homepage {
     margin: auto;
+  }
+  .homepage .contact-container {
+    height: 100%;
   }
   .homepage .contact-container h2 {
     font-size: 0.9rem;

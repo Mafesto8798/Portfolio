@@ -56,11 +56,11 @@ export default function Home() {
             </div>
             <section className="bio">
                 <div className="languages">
-                    <img className="language-icon" src="react.ico" alt=""/>
-                    <img className="language-icon" src="js-logo.png" alt=""/>
-                    <img className="language-icon" src="html-logo.png" alt=""/>
-                    <img className="language-icon" src="sass-logo.png" alt=""/>
-                    <img className="language-icon" src="css-logo.png" alt=""/>
+                    <img className="language-icon" src="js-logo.png" alt="Javascript"/>
+                    <img className="language-icon" src="html-logo.png" alt="HTML"/>
+                    <img className="language-icon" src="React.png" alt="React"/>
+                    <img className="language-icon" src="css-logo.png" alt="CSS"/>
+                    <img className="language-icon" src="sass-logo.png" alt="Sass"/>
                 </div>
             </section>
             <div className="projects-container" >
