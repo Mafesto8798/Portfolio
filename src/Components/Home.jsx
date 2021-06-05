@@ -1,6 +1,7 @@
 import React from 'react'
 import {v4 as uuidv4} from "uuid";
 import Project from './Project'
+import {Fade,Zoom} from 'react-reveal'
 const projects = [
     {id:uuidv4(),image:"Logo.png",link:"https://login-acnh.herokuapp.com/",title:"Villager Search",
         desc:"Login or create an account and search for Animal Crossing villagers as well as get to know them.",
@@ -46,12 +47,13 @@ export default function Home() {
 
 
     return (
+        <Fade >
         <div className="homepage">
             <img  className="woods-img" src="https://www.massaudubon.org/var/ezdemo_site/storage/images/site_ma/get-outdoors/wildlife-sanctuaries/lincoln-woods/11485-32-eng-US/lincoln-woods-wildlife-sanctuary.jpg" alt=""/>
             <div className="profile-container">
                 <h2>Kenny Chavarriaga - Front End Developer</h2>
-                <p>I am a self-taught developer from Rhode Island. I love creating new user interfaces and see how far I can stretch my skills in the unlimited world of coding. My other passions
-                    include playing bass, sculpting, and cooking.
+                <p style={{textAlign:'center'}}>I am an aspiring developer from Rhode Island. I love creating user experiences and learning new technologies. My other passions
+                    include playing guitar, being in nature, and cooking.
                 </p>
             </div>
             <section className="bio">
@@ -76,5 +78,6 @@ export default function Home() {
                 </div>
             </footer>
         </div>
+        </Fade>
     )
 }

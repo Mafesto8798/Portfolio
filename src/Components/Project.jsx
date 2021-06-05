@@ -1,10 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Fade} from 'react-reveal'
+
+
+
 export default function Project({project}) {
 
 
 
     return (
+        <Fade>
         <Link className="project-link" to={{pathname:project.link}} target="blank">
         <div className="project-container">
                 <div className="title">
@@ -24,5 +29,6 @@ export default function Project({project}) {
                 </div>
         </div>
         </Link>
+        </Fade>
     )
 }
