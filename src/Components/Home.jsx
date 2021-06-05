@@ -61,7 +61,7 @@ export default function Home() {
                     <img className="language-icon" src="js-logo.png" alt="Javascript"/>
                     <img className="language-icon" src="html-logo.png" alt="HTML"/>
                     <img className="language-icon" src="React.png" alt="React"/>
-                    <img style={{height:"100px"}}src="Redux.svg" alt="Redux" />
+                    <img className="language-icon" src="Redux.svg" alt="Redux" />
                     <img className="language-icon" src="css-logo.png" alt="CSS"/>
                     <img className="language-icon" src="sass-logo.png" alt="Sass"/>
                 </div>

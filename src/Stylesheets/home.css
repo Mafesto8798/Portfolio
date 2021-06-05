@@ -131,20 +131,23 @@
   .homepage .bio {
     margin: 30px;
   }
+  .homepage .bio .languages {
+    width: 70%;
+  }
   .homepage .bio .languages .language-icon {
-    height: 50px;
+    height: 45px;
   }
 }
 
 @media (max-width: 400px) {
   .homepage .profile-container {
-    width: 50%;
+    width: 60%;
   }
   .homepage .profile-container p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .homepage .profile-container h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=home.css.map */

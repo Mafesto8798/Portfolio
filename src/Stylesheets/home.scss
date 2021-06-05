@@ -105,8 +105,9 @@
         .bio{
             margin:30px;
         .languages{
+            width:70%;
             .language-icon{
-                height:50px;
+                height:45px;
             }
         }
     }
@@ -117,13 +118,14 @@
     .homepage{
 
         .profile-container{
-            width:50%;
+            width:60%;
             p{
-                font-size:0.8rem;
+                font-size:1rem;
             }
             h2{
-                font-size:0.8rem;
+                font-size:1rem;
             }
+            
         }
     }
 }
