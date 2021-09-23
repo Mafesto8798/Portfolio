@@ -1,0 +1,47 @@
+.project-icon {
+  width: 20%;
+  height: auto;
+}
+.project-card {
+  margin: 5% auto;
+  width: 80%;
+  .project-title {
+    color: #00a2d8;
+  }
+  .project-info {
+    margin: 30px auto;
+    width: 70%;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-icon {
+    width: 30%;
+  }
+  .project-card {
+    width: 90%;
+    .project-title {
+      font-size: 1.2rem;
+    }
+    .project-info {
+      margin: 0;
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    width: 100%;
+    .project-title {
+      font-size: 1.2rem;
+    }
+    .project-info {
+      margin: 0;
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+}

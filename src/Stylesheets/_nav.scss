@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .github-link {
+    transform: scale(1.4);
+    margin: 0 1%;
+    &:hover {
+      cursor: pointer;
+      animation: github 0.1s ease-in-out forwards;
+    }
+  }
+  .nav-btn {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .github-link {
+      margin: 3% 0;
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes github {
+  to {
+    transform: scale(1.6);
+  }
+}

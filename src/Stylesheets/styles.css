@@ -1,0 +1,71 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .github-link {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  margin: 0 1%;
+}
+
+.navbar .github-link:hover {
+  cursor: pointer;
+  -webkit-animation: github 0.1s ease-in-out forwards;
+          animation: github 0.1s ease-in-out forwards;
+}
+
+.navbar .nav-btn {
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .github-link {
+    margin: 3% 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes github {
+  to {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+
+@keyframes github {
+  to {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+
+body {
+  margin: 0;
+  background: #251616;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
