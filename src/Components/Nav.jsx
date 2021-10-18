@@ -19,12 +19,11 @@ export default function Nav() {
         />
       </Link>
       <div>
-        <EuiButton color="primary" fill={true} className="nav-btn">
-          About Me
-        </EuiButton>
-        <EuiButton color="primary" fill={true} className="nav-btn">
-          Contact
-        </EuiButton>
+        <Link to="/">
+          <EuiButton color="primary" fill={true} className="nav-btn">
+            Home
+          </EuiButton>
+        </Link>
       </div>
     </EuiPanel>
   );

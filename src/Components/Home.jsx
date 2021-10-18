@@ -18,22 +18,24 @@ export default function Home() {
             <EuiText size="m">
               <h2 style={{ textAlign: "center" }}>
                 I am an aspiring developer from Rhode Island. I love creating
-                beautiful experiences and learning new technologies.
+                beautiful experiences and learning new things about technology.
               </h2>
             </EuiText>
           </EuiFlexItem>
           <EuiFlexItem className="bio">
             <div className="languages">
+              <img className="language-icon" src="html-logo.png" alt="HTML" />
+              <img className="language-icon" src="sass-logo.png" alt="Sass" />
+
+              <img className="language-icon" src="React.png" alt="React" />
+              <img className="language-icon" src="Redux.svg" alt="Redux" />
+              <img className="language-icon" src="css-logo.png" alt="CSS" />
+
               <img
                 className="language-icon"
                 src="js-logo.png"
                 alt="Javascript"
               />
-              <img className="language-icon" src="html-logo.png" alt="HTML" />
-              <img className="language-icon" src="React.png" alt="React" />
-              <img className="language-icon" src="Redux.svg" alt="Redux" />
-              <img className="language-icon" src="css-logo.png" alt="CSS" />
-              <img className="language-icon" src="sass-logo.png" alt="Sass" />
             </div>
             <div></div>
           </EuiFlexItem>

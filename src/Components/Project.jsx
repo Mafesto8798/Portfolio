@@ -13,9 +13,16 @@ export default function Project({ project }) {
   const cardFooterContent = (
     <EuiFlexGroup justifyContent="flexEnd">
       <EuiFlexItem grow={false}>
-        <Link to={{ pathname: project.link }} target="_blank">
+        <Link to={{ pathname: project.code }} target="_blank">
           <EuiButton fill={true} color="primary">
-            Check It Out
+            View Code
+          </EuiButton>
+        </Link>
+      </EuiFlexItem>
+      <EuiFlexItem grow={false}>
+        <Link to={{ pathname: project.demo }} target="_blank">
+          <EuiButton fill={true} color="primary">
+            View Demo
           </EuiButton>
         </Link>
       </EuiFlexItem>
