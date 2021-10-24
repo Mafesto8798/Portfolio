@@ -12,7 +12,7 @@
     animation: home 1s ease-in-out forwards;
     h2 {
       width: 50%;
-      margin: 50px auto;
+      margin: 30px auto;
     }
   }
 }
@@ -30,21 +30,6 @@
   }
 }
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #007aa3;
-  height: 15vh;
-  a {
-    font-family: "Quicksand", sans-serif;
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-}
 .bio {
   animation: home 1s ease-in-out forwards;
   margin: auto;

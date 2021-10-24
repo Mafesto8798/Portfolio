@@ -18,13 +18,6 @@ export default function Nav() {
           className="github-link"
         />
       </Link>
-      <div>
-        <Link to="/">
-          <EuiButton color="primary" fill={true} className="nav-btn">
-            Home
-          </EuiButton>
-        </Link>
-      </div>
     </EuiPanel>
   );
 }

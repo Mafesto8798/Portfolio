@@ -31,7 +31,7 @@
 
 .homepage .profile-container h2 {
   width: 50%;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 @-webkit-keyframes home {
@@ -62,32 +62,6 @@
     opacity: 1;
     width: 40%;
   }
-}
-
-.contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #007aa3;
-  height: 15vh;
-}
-
-.contact-container a {
-  font-family: "Quicksand", sans-serif;
-  margin: 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .bio {

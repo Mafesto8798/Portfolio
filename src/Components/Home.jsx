@@ -24,18 +24,14 @@ export default function Home() {
           </EuiFlexItem>
           <EuiFlexItem className="bio">
             <div className="languages">
-              <img className="language-icon" src="html-logo.png" alt="HTML" />
-              <img className="language-icon" src="sass-logo.png" alt="Sass" />
-
               <img className="language-icon" src="React.png" alt="React" />
-              <img className="language-icon" src="Redux.svg" alt="Redux" />
-              <img className="language-icon" src="css-logo.png" alt="CSS" />
-
               <img
                 className="language-icon"
-                src="js-logo.png"
+                src="javascript_round.png"
                 alt="Javascript"
               />
+              <img className="language-icon" src="Graphql.svg" alt="GraphQL" />
+              <img className="language-icon" src="Redux.svg" alt="Redux" />
             </div>
             <div></div>
           </EuiFlexItem>
