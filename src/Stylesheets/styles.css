@@ -2,21 +2,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 7vh;
 }
 
-.navbar .github-link {
+.navbar .link {
+  margin-right: 70px;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  margin: 20px auto;
 }
 
-.navbar .github-link:hover {
+.navbar .link:hover {
   cursor: pointer;
   -webkit-animation: github 0.1s ease-in-out forwards;
           animation: github 0.1s ease-in-out forwards;
@@ -34,7 +35,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .navbar .github-link {
+  .navbar .link {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -45,21 +46,25 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .navbar .github-link {
+  .navbar .link {
     margin: 3% 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .navbar .resume-link {
+    margin-left: 20px;
+    font-size: 1.2rem;
   }
 }
 

@@ -29,9 +29,10 @@
           animation: home 1s ease-in-out forwards;
 }
 
-.homepage .profile-container h2 {
-  width: 50%;
-  margin: 30px auto;
+.homepage .profile-container h1 {
+  line-height: 1.6;
+  width: 60%;
+  margin: 10px auto;
 }
 
 @-webkit-keyframes home {
@@ -93,6 +94,9 @@
 }
 
 @media (max-width: 1200px) {
+  .homepage .profile-container h1 {
+    width: 75%;
+  }
   .homepage .bio .languages .language-icon {
     height: 75px;
     margin: 20px;
@@ -101,11 +105,12 @@
 
 @media (max-width: 800px) {
   .homepage .profile-container h1 {
+    width: 90%;
+    line-height: 2;
     font-size: 100%;
   }
   .homepage .profile-container h2 {
     font-size: 100%;
-    width: 80%;
   }
   .homepage .bio .languages {
     height: 10%;

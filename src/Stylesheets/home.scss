@@ -10,9 +10,10 @@
     align-items: center;
     flex-direction: column;
     animation: home 1s ease-in-out forwards;
-    h2 {
-      width: 50%;
-      margin: 30px auto;
+    h1 {
+      line-height: 1.6;
+      width: 60%;
+      margin: 10px auto;
     }
   }
 }
@@ -49,6 +50,11 @@
 }
 @media (max-width: 1200px) {
   .homepage {
+    .profile-container {
+      h1 {
+        width: 75%;
+      }
+    }
     .bio {
       .languages {
         .language-icon {
@@ -64,11 +70,12 @@
   .homepage {
     .profile-container {
       h1 {
+        width: 90%;
+        line-height: 2;
         font-size: 100%;
       }
       h2 {
         font-size: 100%;
-        width: 80%;
       }
     }
     .bio {

@@ -11,15 +11,25 @@ export default function Home() {
         <div>
           <EuiFlexItem className="profile-container">
             <EuiTitle size="l">
-              <h1 style={{ textAlign: "center" }}>
-                Kenny Chavarriaga - Front End Developer
+              <h1
+                style={{
+                  textAlign: "center",
+                  fontWeight: 500,
+                  color: "#00a2d8",
+                }}
+              >
+                Kenny Chavarriaga - Frontend Developer
               </h1>
             </EuiTitle>
             <EuiText size="m">
-              <h2 style={{ textAlign: "center" }}>
-                I am an aspiring developer from Rhode Island. I love creating
-                beautiful experiences and learning new things about technology.
-              </h2>
+              <h1 style={{ textAlign: "center" }}>
+                Since I've began coding in 2018, I've had a nonstop journey of
+                facing challenges and picking up new skills while working a full
+                time job in another field. I am looking to make frontend
+                development my primary focus and join a team! I am willing to
+                learn, communicate, and troubleshoot to ensure a quality,
+                maintainable, and reusable codebase.
+              </h1>
             </EuiText>
           </EuiFlexItem>
           <EuiFlexItem className="bio">

@@ -2,7 +2,6 @@ import {
   EuiCard,
   EuiFlexGroup,
   EuiButton,
-  EuiIcon,
   EuiFlexItem,
   EuiText,
 } from "@elastic/eui";
