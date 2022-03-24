@@ -5,7 +5,7 @@
 
 .project-card {
   margin: 1% auto;
-  width: 70%;
+  width: 60%;
 }
 
 .project-card .project-title {
@@ -19,19 +19,19 @@
   line-height: 1.5em;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 650px) and (max-width: 1200px) {
   .project-icon {
     width: 25%;
   }
   .project-card {
-    width: 80%;
+    width: 100%;
   }
   .project-card .project-title {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .project-card .project-info {
-    margin: 0;
-    width: 90%;
+    width: 80%;
+    letter-spacing: 0.03em;
     font-size: 0.8rem;
   }
   .project-card .btn-container {

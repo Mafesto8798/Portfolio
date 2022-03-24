@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Nav from "./Nav";
 import Projects from "./Projects";
 import { EuiText, EuiPage, EuiTitle, EuiFlexItem } from "@elastic/eui";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
       <EuiPage>
         <Projects />
       </EuiPage>
+      <Footer />
     </>
   );
 }

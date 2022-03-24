@@ -18,13 +18,6 @@ export default function Nav() {
           className="link"
         />
       </Link>
-      <a href="Coding Resume.docx" download>
-        <EuiText size="m">
-          <h1 style={{ fontWeight: 400 }} className="resume-link">
-            Resume
-          </h1>
-        </EuiText>
-      </a>
     </EuiPanel>
   );
 }

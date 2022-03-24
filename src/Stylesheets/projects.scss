@@ -4,7 +4,7 @@
 }
 .project-card {
   margin: 1% auto;
-  width: 70%;
+  width: 60%;
   .project-title {
     font-weight: 400;
     color: #00a2d8;
@@ -16,18 +16,18 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 650px) and (max-width: 1200px) {
   .project-icon {
     width: 25%;
   }
   .project-card {
-    width: 80%;
+    width: 100%;
     .project-title {
-      font-size: 1em;
+      font-size: 0.9em;
     }
     .project-info {
-      margin: 0;
-      width: 90%;
+      width: 80%;
+      letter-spacing: 0.03em;
       font-size: 0.8rem;
     }
     .btn-container {
