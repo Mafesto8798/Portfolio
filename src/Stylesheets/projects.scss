@@ -1,48 +1,58 @@
 .project-icon {
-  width: 20%;
+  width: 15%;
   height: auto;
 }
 .project-card {
-  margin: 5% auto;
+  margin: 1% auto;
   width: 70%;
   .project-title {
     font-weight: 400;
     color: #00a2d8;
   }
   .project-info {
-    margin: 30px auto;
+    margin: 20px auto;
     width: 70%;
-    line-height: 1.6;
+    line-height: 1.5em;
   }
 }
 
 @media (max-width: 1200px) {
   .project-icon {
-    width: 30%;
+    width: 25%;
   }
   .project-card {
-    width: 100%;
+    width: 80%;
     .project-title {
-      font-size: 1.2rem;
+      font-size: 1em;
     }
     .project-info {
       margin: 0;
-      width: 100%;
+      width: 90%;
       font-size: 0.8rem;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
 }
 
 @media (max-width: 600px) {
+  .project-icon {
+    width: 25%;
+  }
   .project-card {
-    width: 100%;
+    width: 80%;
     .project-title {
-      font-size: 1.2rem;
+      font-size: 1em;
     }
     .project-info {
-      margin: 0;
-      width: 100%;
-      font-size: 1rem;
+      margin: 0 auto;
+      width: 80%;
+      letter-spacing: 0.03em;
+      font-size: 0.8rem;
     }
   }
 }

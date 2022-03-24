@@ -23,24 +23,28 @@ export default function Home() {
             </EuiTitle>
             <EuiText size="m">
               <h1 style={{ textAlign: "center" }}>
-                Since I've began coding in 2018, I've had a nonstop journey of
-                facing challenges and picking up new skills while working a full
-                time job in another field. I am looking to make frontend
-                development my primary focus and join a team! I am willing to
-                learn, communicate, and troubleshoot to ensure a quality,
-                maintainable, and reusable codebase.
+                Since I've began coding in 2018, I have picked up new
+                technologies such as React, Typescript, and sharpened my skills
+                in JavaScript. I've learned more modern approaches to problem
+                solving, and remain curious but determined when finding
+                solutions. I love the work that I do and would love to be a part
+                of your team to contribute to a robust user interface.
               </h1>
             </EuiText>
           </EuiFlexItem>
           <EuiFlexItem className="bio">
             <div className="languages">
-              <img className="language-icon" src="React.png" alt="React" />
+              <img className="language-icon" src="React.svg" alt="React" />
               <img
                 className="language-icon"
-                src="javascript_round.png"
+                src="javascript.png"
                 alt="Javascript"
               />
-              <img className="language-icon" src="Graphql.svg" alt="GraphQL" />
+              <img
+                className="language-icon"
+                src="typescript.svg"
+                alt="Typescript"
+              />
               <img className="language-icon" src="Redux.svg" alt="Redux" />
             </div>
             <div></div>

@@ -13,7 +13,7 @@ export default function Nav() {
       <Link to={{ pathname: "https://github.com/mafesto8798" }} target="_blank">
         <EuiIcon
           type="github.svg"
-          size="xxl"
+          size="xl"
           title="Github link"
           className="link"
         />

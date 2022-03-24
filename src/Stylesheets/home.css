@@ -93,9 +93,13 @@
   margin: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 805px) and (max-width: 1200px) {
+  .homepage {
+    height: 100vh;
+  }
   .homepage .profile-container h1 {
-    width: 75%;
+    font-size: 2em;
+    width: 80%;
   }
   .homepage .bio .languages .language-icon {
     height: 75px;

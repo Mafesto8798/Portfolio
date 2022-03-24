@@ -10,17 +10,17 @@ import React, { Fragment } from "react";
 
 export default function Project({ project }) {
   const cardFooterContent = (
-    <EuiFlexGroup justifyContent="flexEnd">
+    <EuiFlexGroup justifyContent="flexEnd" className="btn-container">
       <EuiFlexItem grow={false}>
         <Link to={{ pathname: project.code }} target="_blank">
-          <EuiButton fill={true} color="primary">
+          <EuiButton standard={true} color="primary" size="s" fullWidth="false">
             View Code
           </EuiButton>
         </Link>
       </EuiFlexItem>
       <EuiFlexItem grow={false}>
         <Link to={{ pathname: project.demo }} target="_blank">
-          <EuiButton fill={true} color="primary">
+          <EuiButton fill={true} color="primary" size="s" fullWidth="false">
             View Demo
           </EuiButton>
         </Link>
@@ -41,7 +41,7 @@ export default function Project({ project }) {
           textAlign="center"
           title={
             <EuiText>
-              <h1 className="project-title">{project.title}</h1>
+              <h2 className="project-title">{project.title}</h2>
             </EuiText>
           }
           description={

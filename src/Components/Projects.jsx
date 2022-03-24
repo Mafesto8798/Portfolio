@@ -20,10 +20,10 @@ const projects = [
   },
   {
     id: uuidv4(),
-    demo: "https://weather-forecast-now.herokuapp.com",
-    code: "https://github.com/Mafesto8798/weather-now",
-    title: "Weather Forecast",
-    desc: "Get current weather information from an API that displays a three day forecast as well as hourly weather.",
+    demo: "https://gamedev-portfolio.herokuapp.com",
+    code: "https://github.com/Mafesto8798/game-dev-portfolio",
+    title: "Gameplay Programmer Portfolio",
+    desc: "Demonstrates a responsive portfolio showcasing experience, and utilizing reusable components",
   },
 ];
 

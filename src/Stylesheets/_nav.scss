@@ -4,7 +4,7 @@
   align-items: center;
   height: 7vh;
   .link {
-    margin-right: 70px;
+    margin: 70px;
     transform: scale(1.4);
     &:hover {
       cursor: pointer;
@@ -21,21 +21,23 @@
     .link {
       transform: scale(1);
     }
+    .resume-link {
+      font-size: 1.5em;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     .link {
-      margin: 3% 0;
+      margin: 5% 0;
       transform: scale(0.8);
     }
     .resume-link {
-      margin-left: 20px;
+      padding-left: 20px;
       font-size: 1.2rem;
     }
   }
