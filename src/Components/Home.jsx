@@ -3,6 +3,10 @@ import Nav from "./Nav";
 import Projects from "./Projects";
 import { EuiText, EuiPage, EuiTitle, EuiFlexItem } from "@elastic/eui";
 import Footer from "./Footer";
+import reactLogo from "../Images/react.svg";
+import reduxLogo from "../Images/Redux.svg";
+import typescriptLogo from "../Images/typescript.svg";
+import javascriptLogo from "../Images/javascript.png";
 
 export default function Home() {
   return (
@@ -35,18 +39,18 @@ export default function Home() {
           </EuiFlexItem>
           <EuiFlexItem className="bio">
             <div className="languages">
-              <img className="language-icon" src="React.svg" alt="React" />
+              <img className="language-icon" src={reactLogo} alt="React" />
               <img
                 className="language-icon"
-                src="javascript.png"
+                src={javascriptLogo}
                 alt="Javascript"
               />
               <img
                 className="language-icon"
-                src="typescript.svg"
+                src={typescriptLogo}
                 alt="Typescript"
               />
-              <img className="language-icon" src="Redux.svg" alt="Redux" />
+              <img className="language-icon" src={reduxLogo} alt="Redux" />
             </div>
             <div></div>
           </EuiFlexItem>

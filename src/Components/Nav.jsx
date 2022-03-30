@@ -1,6 +1,7 @@
 import { EuiText, EuiPanel, EuiIcon } from "@elastic/eui";
 import React from "react";
 import { Link } from "react-router-dom";
+import githubLogo from "../Images/github.svg";
 
 export default function Nav() {
   return (
@@ -12,7 +13,7 @@ export default function Nav() {
     >
       <Link to={{ pathname: "https://github.com/mafesto8798" }} target="_blank">
         <EuiIcon
-          type="github.svg"
+          type={githubLogo}
           size="xl"
           title="Github link"
           className="link"

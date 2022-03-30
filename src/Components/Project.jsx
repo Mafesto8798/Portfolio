@@ -6,7 +6,8 @@ import {
   EuiText,
 } from "@elastic/eui";
 import { Link } from "react-router-dom";
-import React, { Fragment } from "react";
+import React from "react";
+import desktop from "../Images/desktop.svg";
 
 export default function Project({ project }) {
   const cardFooterContent = (
@@ -29,7 +30,7 @@ export default function Project({ project }) {
   );
 
   const icon = (
-    <img className="project-icon" src="desktop.svg" alt="project-icon" />
+    <img className="project-icon" src={desktop} alt="project-icon" />
   );
 
   return (
