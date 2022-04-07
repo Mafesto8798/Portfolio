@@ -1,27 +1,31 @@
-import {
-  EuiCard,
-  EuiFlexGroup,
-  EuiButton,
-  EuiFlexItem,
-  EuiText,
-} from "@elastic/eui";
+import { EuiCard, EuiFlexGroup, EuiButton, EuiFlexItem } from "@elastic/eui";
 import { Link } from "react-router-dom";
 import React from "react";
-import desktop from "../Images/desktop.svg";
 
 export default function Project({ project }) {
   const cardFooterContent = (
     <EuiFlexGroup justifyContent="flexEnd" className="btn-container">
       <EuiFlexItem grow={false}>
         <Link to={{ pathname: project.code }} target="_blank">
-          <EuiButton standard={true} color="primary" size="s" fullWidth="false">
+          <EuiButton
+            color="primary"
+            size="s"
+            fullWidth={false}
+            iconType="documents"
+          >
             View Code
           </EuiButton>
         </Link>
       </EuiFlexItem>
       <EuiFlexItem grow={false}>
         <Link to={{ pathname: project.demo }} target="_blank">
-          <EuiButton fill={true} color="primary" size="s" fullWidth="false">
+          <EuiButton
+            fill={true}
+            color="primary"
+            size="s"
+            fullWidth={false}
+            iconType="playFilled"
+          >
             View Demo
           </EuiButton>
         </Link>
@@ -29,28 +33,17 @@ export default function Project({ project }) {
     </EuiFlexGroup>
   );
 
-  const icon = (
-    <img className="project-icon" src={desktop} alt="project-icon" />
-  );
-
   return (
     <>
       <EuiFlexItem>
         <EuiCard
-          icon={icon}
+          image={project.icon}
           className="project-card"
           textAlign="center"
-          title={
-            <EuiText>
-              <h2 className="project-title">{project.title}</h2>
-            </EuiText>
-          }
-          description={
-            <EuiText>
-              <h2 className="project-info">{project.desc}</h2>
-            </EuiText>
-          }
+          title={project.title}
+          description={project.desc}
           footer={cardFooterContent}
+          paddingSize="l"
         ></EuiCard>
       </EuiFlexItem>
     </>

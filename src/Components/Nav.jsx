@@ -1,4 +1,4 @@
-import { EuiText, EuiPanel, EuiIcon } from "@elastic/eui";
+import { EuiPanel, EuiIcon } from "@elastic/eui";
 import React from "react";
 import { Link } from "react-router-dom";
 import githubLogo from "../Images/github.svg";

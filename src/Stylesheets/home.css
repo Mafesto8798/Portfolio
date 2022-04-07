@@ -9,6 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
 .homepage .profile-container {
@@ -31,8 +32,8 @@
 
 .homepage .profile-container h1 {
   line-height: 1.6;
-  width: 60%;
-  margin: 10px auto;
+  width: 50%;
+  margin: 40px auto;
 }
 
 .footer {
@@ -148,6 +149,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer .footer-text {
+    font-size: 0.8rem;
+  }
+  .footer .resume-link {
+    font-size: 0.9rem;
   }
   .homepage {
     -webkit-box-pack: start;

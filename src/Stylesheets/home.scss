@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   .profile-container {
     opacity: 0;
     display: flex;
@@ -12,8 +13,8 @@
     animation: home 1s ease-in-out forwards;
     h1 {
       line-height: 1.6;
-      width: 60%;
-      margin: 10px auto;
+      width: 50%;
+      margin: 40px auto;
     }
   }
 }
@@ -88,6 +89,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    .footer-text {
+      font-size: 0.8rem;
+    }
+    .resume-link {
+      font-size: 0.9rem;
+    }
   }
   .homepage {
     justify-content: start;
