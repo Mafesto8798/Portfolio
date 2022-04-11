@@ -62,7 +62,7 @@
     }
   }
 }
-@media (min-width: 750px) and (max-width: 1200px) {
+@media (max-width: 1000px) {
   .homepage {
     height: 100vh;
     .profile-container {
@@ -119,5 +119,56 @@
         }
       }
     }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) {
+  .homepage {
+    align-items: start;
+    height: 100vh;
+    .profile-container {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .bio {
+    .languages {
+      width: 100%;
+      margin: 0 auto;
+      .language-icon {
+        height: 40px;
+        margin: 50px 10px;
+      }
+    }
+  }
+  .footer {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage {
+    align-items: start;
+    height: 100vh;
+    .profile-container {
+      h1 {
+        line-height: 2;
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .bio {
+    .languages {
+      width: 100%;
+      margin: 0 auto;
+      .language-icon {
+        height: 80px;
+        margin: 50px 10px;
+      }
+    }
+  }
+  .footer {
+    height: 15vh;
   }
 }

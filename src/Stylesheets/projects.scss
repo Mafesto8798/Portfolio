@@ -24,3 +24,27 @@
     width: 90%;
   }
 }
+
+@media (orientation: landscape) and (min-width: 1000px) {
+  .projects-container {
+    flex-wrap: wrap;
+    .project-icon {
+      width: 50%;
+    }
+    .project-card {
+      width: 50vw;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-container {
+    flex-wrap: wrap;
+    .project-icon {
+      width: 50%;
+    }
+    .project-card {
+      width: 40vw;
+    }
+  }
+}

@@ -26,4 +26,30 @@
     width: 90%;
   }
 }
+
+@media (orientation: landscape) and (min-width: 1000px) {
+  .projects-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects-container .project-icon {
+    width: 50%;
+  }
+  .projects-container .project-card {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects-container .project-icon {
+    width: 50%;
+  }
+  .projects-container .project-card {
+    width: 40vw;
+  }
+}
 /*# sourceMappingURL=projects.css.map */
