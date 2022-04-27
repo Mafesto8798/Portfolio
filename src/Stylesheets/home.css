@@ -180,7 +180,7 @@
   }
 }
 
-@media (orientation: landscape) and (min-width: 1000px) {
+@media (orientation: landscape) and (min-width: 800px) {
   .homepage {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -188,7 +188,7 @@
     height: 100vh;
   }
   .homepage .profile-container h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .bio .languages {
     width: 100%;
@@ -199,11 +199,14 @@
     margin: 50px 10px;
   }
   .footer {
-    height: 30vh;
+    height: 15vh;
+  }
+  .footer .footer-text {
+    font-size: 0.8rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 1200px) {
   .homepage {
     -webkit-box-align: start;
         -ms-flex-align: start;

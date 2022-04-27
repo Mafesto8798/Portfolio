@@ -122,13 +122,13 @@
   }
 }
 
-@media (orientation: landscape) and (min-width: 1000px) {
+@media (orientation: landscape) and (min-width: 800px) {
   .homepage {
     align-items: start;
     height: 100vh;
     .profile-container {
       h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -143,11 +143,14 @@
     }
   }
   .footer {
-    height: 30vh;
+    height: 15vh;
+    .footer-text {
+      font-size: 0.8rem;
+    }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 1200px) {
   .homepage {
     align-items: start;
     height: 100vh;
