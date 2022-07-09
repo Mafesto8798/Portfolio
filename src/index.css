@@ -1,13 +1,375 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  --primary-color: #2c3240;
+  --secondary-color: #00ff94;
+  --text-color: #b7b7b7;
+  background: var(--primary-color);
+}
+#resume {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+#bg {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 149, 0.16),
+    var(--primary-color) 80%
+  );
+}
+#arrow {
+  visibility: hidden;
+  z-index: 1;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+#arrow img {
+  width: 40px;
+  border: solid var(--secondary-color) 1px;
+  padding: 7px;
+  border-radius: 100%;
+  animation: arrow 1.5s ease-in-out infinite alternate-reverse forwards;
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 180px;
+  padding: 15px;
+  border: #00ff94 1px solid;
+  color: #00ff94;
+}
+.btn:hover {
+  color: #00ff94;
+}
+
+.btn-filled {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: black;
+  width: 100px;
+  height: 50px;
+  background: #00ff94;
+}
+.btn-filled:hover {
+  color: black;
+}
+
+.btn-outline {
+  width: 100px;
+  height: 50px;
+}
+
+.nav-link {
+  margin: 10px auto;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px auto;
+  letter-spacing: 0.03em;
+}
+
+#subtitle {
+  font-weight: 100;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
+#title {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+}
+#info {
+  line-height: 1.5em;
+  margin: 20px auto;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
+  color: white;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  margin: 50px auto;
+  color: white;
+}
+.skills-title p {
+  margin: 0;
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.skills img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 300vh;
+}
+.green-bar {
+  position: relative;
+  bottom: 10px;
+  margin: 0 auto;
+  background: #00ff94;
+  border-radius: 10px 10px 0 0;
+  width: 90%;
+  height: 10px;
+}
+.card {
+  width: 18rem;
+}
+.card:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+}
+.card-body p {
+  font-size: 12px;
+}
+
+.overlay {
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: inherit;
+  height: 100%;
+  background: rgba(46, 53, 71, 0.91);
+  transition: 0.5s ease;
+  position: absolute;
+}
+.contact {
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+.contact span {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact img {
+  margin: 20px auto;
+  width: 48px;
+}
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222632;
+  height: 10vh;
+  color: var(--text-color);
+  width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 500px) and (max-width: 991px) {
+  #info {
+    width: 80%;
+  }
+  #arrow img {
+    width: 60px;
+  }
+  html {
+    font-size: 22px;
+  }
+  .skills-section {
+    height: 200vh;
+  }
+  .skills-title {
+    width: 20%;
+    align-items: flex-start;
+  }
+  .skills span {
+    font-size: 20px;
+    margin: 70px;
+  }
+  .skills img {
+    margin: 25px;
+    height: 80px;
+    width: 80px;
+  }
+  .card-body p {
+    font-size: 24px;
+  }
+  .btn {
+    width: 200px;
+    height: 75px;
+  }
+  .projects {
+    height: 200vh;
+  }
+  .contact {
+    height: 50%;
+  }
+  .contact img {
+    width: 60px;
+  }
+  footer {
+    min-height: 15vh;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  #navbar {
+    justify-content: flex-end;
+  }
+
+  html {
+    font-size: 16px;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+  }
+  .btn:hover {
+    font-weight: bold;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+  }
+  .btn-outline {
+    width: 100px;
+    height: 50px;
+  }
+  .btn-filled {
+    height: 50px;
+    width: 100px;
+  }
+  #home {
+    align-items: start;
+    margin: 100px auto;
+  }
+  #title {
+    text-align: left;
+  }
+  #bg {
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 149, 0.16),
+      var(--primary-color) 40%
+    );
+    width: 99vw;
+  }
+  #info {
+    text-align: left;
+    width: 100%;
+  }
+  #navbar {
+    padding-right: 60px;
+  }
+  .navbar-brand {
+    padding-left: 100px;
+  }
+  .skills-section {
+    height: 120vh;
+  }
+  .skills-title {
+    width: 10%;
+  }
+  .skills {
+    width: 75%;
+  }
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+  .skills span {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+  }
+  .card {
+    width: 20%;
+  }
+  .projects {
+    flex-direction: row;
+    height: 80vh;
+  }
+
+  .overlay {
+    width: 100%;
+    font-size: 16px;
+  }
+  .overlay a {
+    font-size: 16px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .contact {
+    height: 50%;
+    width: 100%;
+    flex-direction: row;
+  }
+  .contact span {
+    width: 200px;
+  }
+  footer {
+    min-height: 15vh;
+  }
 }
