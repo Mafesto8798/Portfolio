@@ -281,7 +281,7 @@ footer {
   }
 
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
   .btn {
     width: 200px;
@@ -301,6 +301,7 @@ footer {
     width: 100px;
   }
   #home {
+    width: 75%;
     align-items: start;
     margin: 100px auto;
   }
@@ -316,8 +317,11 @@ footer {
     width: 99vw;
   }
   #info {
-    text-align: left;
     width: 100%;
+    text-align: left;
+  }
+  #info p {
+    width: 70%;
   }
   #navbar {
     padding-right: 60px;

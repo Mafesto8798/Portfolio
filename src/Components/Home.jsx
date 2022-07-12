@@ -34,9 +34,8 @@ export default function Home() {
 
             <div id="info">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                vitae mollitia modi iusto reiciendis veritatis ad fuga nobis
-                quod. Illum.
+                I am a passionate self-taught developer who is looking to join a
+                team to help build a better web experience.
               </p>
             </div>
             <a href="#contact" style={{ textDecoration: "none" }}>
