@@ -46,7 +46,7 @@ export default function Nav() {
                   Projects
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   href={resume}
                   className="nav-link"
@@ -55,7 +55,7 @@ export default function Nav() {
                 >
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </span>
         </div>
